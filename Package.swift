@@ -19,10 +19,11 @@ import class Foundation.ProcessInfo
 let package = Package(
     name: "swift-certificates",
     products: [
-        .library(
-            name: "X509",
-            targets: ["X509"]
-        )
+      .library(
+    name: "X509",
+    type: .static,
+    targets: ["X509"]
+)
     ],
     targets: [
         .target(
